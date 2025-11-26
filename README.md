@@ -61,7 +61,8 @@ All data is stored locally in your browser using LocalStorage:
 
 ## License
 
-Personal use only.
+MIT License - feel free to use, modify, and distribute this project however you'd like!
+See the LICENSE file for details.
 
 ## Author
 
