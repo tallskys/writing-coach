@@ -157,30 +157,30 @@
           const progress = Math.min((todayWordCount / dailyGoal) * 100, 100);
 
           return (
-            <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900 p-6">
+            <div className="min-h-screen bg-gradient-to-br from-blue-900 via-sky-800 to-slate-900 p-6">
               <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-8">
                   <div className="flex items-center justify-center mb-4">
-                    <div className="w-12 h-12 text-purple-300"><Feather /></div>
+                    <div className="w-12 h-12 text-sky-300"><Feather /></div>
                   </div>
                   <h1 className="text-4xl font-bold text-white mb-2">Your Writing Coach</h1>
-                  <p className="text-purple-200">{getRandomMotivation()}</p>
+                  <p className="text-sky-200">{getRandomMotivation()}</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                   <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20">
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-8 h-8 text-purple-300"><Target /></div>
+                      <div className="w-8 h-8 text-sky-300"><Target /></div>
                       <span className="text-2xl font-bold text-white">{todayWordCount}</span>
                     </div>
                     <div className="mb-2">
-                      <div className="flex justify-between text-sm text-purple-200 mb-1">
+                      <div className="flex justify-between text-sm text-sky-200 mb-1">
                         <span>Today's Goal</span>
                         <span>{dailyGoal} words</span>
                       </div>
                       <div className="w-full bg-white/20 rounded-full h-3">
-                        <div 
-                          className="bg-gradient-to-r from-purple-400 to-pink-400 h-3 rounded-full transition-all duration-500"
+                        <div
+                          className="bg-gradient-to-r from-sky-400 to-blue-500 h-3 rounded-full transition-all duration-500"
                           style={{ width: `${progress}%` }}
                         />
                       </div>
@@ -198,7 +198,7 @@
                       <div className="w-8 h-8 text-orange-300"><Flame /></div>
                       <span className="text-2xl font-bold text-white">{streak}</span>
                     </div>
-                    <p className="text-purple-200 text-sm">
+                    <p className="text-sky-200 text-sm">
                       {streak === 0 ? "Start your streak today!" : `${streak} day${streak > 1 ? 's' : ''} strong!`}
                     </p>
                   </div>
@@ -208,7 +208,7 @@
                       <div className="w-8 h-8 text-blue-300"><TrendingUp /></div>
                       <span className="text-2xl font-bold text-white">{totalWords.toLocaleString()}</span>
                     </div>
-                    <p className="text-purple-200 text-sm">Total words written</p>
+                    <p className="text-sky-200 text-sm">Total words written</p>
                   </div>
                 </div>
 
@@ -218,32 +218,32 @@
                     className="w-full flex items-center justify-between text-left"
                   >
                     <div className="flex items-center">
-                      <div className="w-6 h-6 text-purple-300 mr-3"><BookOpen /></div>
+                      <div className="w-6 h-6 text-sky-300 mr-3"><BookOpen /></div>
                       <h2 className="text-2xl font-bold text-white">Daily Check-In</h2>
                     </div>
-                    <span className="text-purple-200 text-2xl">{showCheckIn ? '−' : '+'}</span>
+                    <span className="text-sky-200 text-2xl">{showCheckIn ? '−' : '+'}</span>
                   </button>
                   
                   {showCheckIn && (
                     <div className="mt-6 space-y-4">
                       <div>
-                        <label className="block text-purple-200 mb-2">How many words did you write today?</label>
+                        <label className="block text-sky-200 mb-2">How many words did you write today?</label>
                         <input
                           type="number"
                           value={todayWordCount}
                           onChange={(e) => handleWordCountUpdate(parseInt(e.target.value) || 0)}
-                          className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white text-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
+                          className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white text-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
                           placeholder="Enter word count"
                         />
                       </div>
                       
                       <div>
-                        <label className="block text-purple-200 mb-2">Adjust your daily goal</label>
+                        <label className="block text-sky-200 mb-2">Adjust your daily goal</label>
                         <input
                           type="number"
                           value={dailyGoal}
                           onChange={(e) => setDailyGoal(parseInt(e.target.value) || 500)}
-                          className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white text-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
+                          className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white text-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
                           placeholder="Daily goal"
                         />
                       </div>
@@ -256,7 +256,7 @@
                     <h2 className="text-2xl font-bold text-white">Today's Writing Exercise</h2>
                     <button
                       onClick={getRandomExercise}
-                      className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all"
+                      className="px-4 py-2 bg-gradient-to-r from-sky-500 to-blue-600 text-white rounded-lg hover:from-sky-600 hover:to-blue-700 transition-all"
                     >
                       New Exercise
                     </button>
@@ -265,21 +265,21 @@
                   {currentExercise ? (
                     <div className="space-y-4">
                       <div className="flex items-center">
-                        <span className="px-3 py-1 bg-purple-500/30 text-purple-200 rounded-full text-sm">
+                        <span className="px-3 py-1 bg-sky-500/30 text-sky-200 rounded-full text-sm">
                           {currentExercise.type}
                         </span>
                       </div>
                       <h3 className="text-xl font-semibold text-white">{currentExercise.title}</h3>
-                      <p className="text-purple-100 leading-relaxed">{currentExercise.prompt}</p>
+                      <p className="text-sky-100 leading-relaxed">{currentExercise.prompt}</p>
                     </div>
                   ) : (
-                    <p className="text-purple-200 text-center py-8">
+                    <p className="text-sky-200 text-center py-8">
                       Click "New Exercise" to get started with today's writing prompt!
                     </p>
                   )}
                 </div>
 
-                <div className="text-center mt-8 text-purple-300 text-sm">
+                <div className="text-center mt-8 text-sky-300 text-sm">
                   Keep writing. Keep growing. Your stories matter.
                 </div>
               </div>
