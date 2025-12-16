@@ -12,6 +12,7 @@
 <body>
     <div id="root"></div>
 
+    <script src="writing-prompts.js"></script>
     <script type="text/babel">
         const { useState, useEffect } = React;
 
@@ -71,48 +72,7 @@
           const [showCheckIn, setShowCheckIn] = useState(false);
           const [completedToday, setCompletedToday] = useState(false);
 
-          const writingExercises = [
-            {
-              title: "Horror Warmup",
-              prompt: "Describe an ordinary object in your room, but write about it as if it's slowly becoming aware of you watching it. 200 words.",
-              type: "warmup"
-            },
-            {
-              title: "Character Snapshot",
-              prompt: "Write a character's internal monologue as they're deciding whether to open a door they know they shouldn't. What do they hear on the other side?",
-              type: "character"
-            },
-            {
-              title: "Atmosphere Builder",
-              prompt: "Describe a familiar place at an unfamiliar time. Focus on sensory details that create unease without anything overtly scary happening.",
-              type: "craft"
-            },
-            {
-              title: "Dialogue Tension",
-              prompt: "Write a conversation between two people where one knows a terrible secret about the other, but neither acknowledges it directly.",
-              type: "dialogue"
-            },
-            {
-              title: "Opening Hook",
-              prompt: "Write three different opening sentences for a horror story. Make each one establish a different type of dread.",
-              type: "technique"
-            },
-            {
-              title: "Pacing Practice",
-              prompt: "Write a 300-word scene that starts mundane and gradually builds to intense horror, focusing on sentence rhythm and pacing.",
-              type: "craft"
-            },
-            {
-              title: "Subtext Exercise",
-              prompt: "Write a scene where the real horror is never stated explicitly, only implied through what characters don't say or do.",
-              type: "advanced"
-            },
-            {
-              title: "Sensory Focus",
-              prompt: "Pick one sense (not sight) and write a scene relying primarily on that sense to create dread.",
-              type: "craft"
-            }
-          ];
+          // writingExercises array is now loaded from writing-prompts.js
 
           const motivationalMessages = [
             "Every word you write is progress. Keep going!",
@@ -331,8 +291,3 @@
     </script>
 </body>
 </html>
-
-<!--
-TODO:
-- Create a much larger set of Writing prompts and store them in a seperate file
--->
